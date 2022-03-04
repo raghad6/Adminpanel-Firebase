@@ -1,0 +1,27 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: #4f7e7b  !important;
+  color: #fff;
+}
+.col-md-auto img{
+  width: 40px;
+  float: right;
+}
+
+.col h4{
+  float: right;
+}
