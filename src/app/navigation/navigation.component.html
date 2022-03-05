@@ -22,14 +22,14 @@
           <div class="col">
             <span>AdminPanel</span>
           </div>
-          <div class="col-md-auto">
-           <img src="../../assets/Favatar.png">
+          <div class="col-md-auto" >
+           <img (click)="goToPage('profile')" src="../../assets/Favatar.png">
           </div>
-          <div class="col col-lg-2">
-           <h4>Raghad AbuSharar</h4>
-          </div>    
-           <!-- <mat-icon>exit_to_app</mat-icon> -->
-          <span class="material-icons">logout</span>
+          <div class="col col-lg-2" >
+           <h4 (click)="goToPage('profile')">Raghad AbuSharar</h4>
+           
+          </div>   <mat-icon style="float: left;">settings</mat-icon>
+          <!-- <span class="material-icons">logout</span> -->
         </div>
       </div>
     </mat-toolbar>

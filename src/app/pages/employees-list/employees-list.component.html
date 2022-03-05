@@ -1,36 +1,31 @@
 <br>
 <h1> Employees List</h1>
-<div class="pricing-header mx-auto">
-  <!-- Showing Employee  data -->
-  <div class="table-responsive">
-    <table class="table table-bordered table-responsive-sm table-responsive-md table-responsive-lg">
-      <thead class="thead-dark">
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Name</th>
-          <th scope="col">Email</th>
-          <th scope="col">Role</th>
-          <th scope="col">Status</th>
-          <th scope="col">Cr.Date</th>
-          <th scope="col">Edit or Delete Users </th>
-        </tr>
-      </thead>
+<!-- Showing Users data -->
+<div class="table-responsive">
+  <table class="table table-bordered table-responsive-sm table-responsive-md ">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Department</th>
+        <th scope="col">Add To Trainers List</th>
+        <!-- <th scope="col">Edit or Delete Users </th> -->
+      </tr>
+    </thead>
 
-      <tbody>
-        <tr >
-          <!-- <th scope="row">{{ i + 1 }}</th> -->
-          <td><img class="avatar" src="../../../assets/Mavatar.png"> </td>
-          <td>dvvd</td>
-          <td>contact.Date</td>
-          <td>contact.Date</td>
-          <td>contact.Date</td>
-          <td>contact.Date </td>
-          <td>
-            <button class="btn btn-outline-info"><i class="fa fa-trash" ></i></button>&nbsp;
-            <button class="btn btn-outline-info"><i class="fa fa-edit"></i></button>
-            </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <tbody>
+      <tr *ngFor="let user of contacts  let i = index;">
+        <th scope="row">{{ i + 1 }}</th>
+        <td><img class="avatar" src="../../../assets/Favatar.png"> {{user.name}} </td>
+        <td>{{user.name}}</td>
+        <td>{{user.name}}</td>
+        <td> <button class="btn btn-outline-info"><mat-icon>person_add</mat-icon></button></td>
+        <!-- <td >
+          <button class="btn btn-outline-info"><i class="fa fa-trash"  (click)="deleteUser(user)"></i></button>
+          <button class="btn btn-outline-info"><i class="fa fa-edit"></i></button>
+          </td> -->
+      </tr>
+    </tbody>
+  </table>
 </div>

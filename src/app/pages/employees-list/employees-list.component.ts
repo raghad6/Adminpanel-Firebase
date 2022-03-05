@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { LocalDataSource } from 'ng2-smart-table';
-// import { SmartTableData } from 'ng2-smart-table';
 
 @Component({
   selector: 'app-employees-list',
@@ -34,9 +32,16 @@ export class EmployeesListComponent implements OnInit {
     name: "Raghad AbuSharar",
     Date: "13.2.2022"
   }];
+  user: any;
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  deleteUser(user:any) {
+    if (window.confirm('Are sure you want to delete this User ?')) { 
+      this.user.DeleteUser(user.$key) 
+    }
   }
 }
