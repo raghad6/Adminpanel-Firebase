@@ -2,28 +2,21 @@
     display: block;
     padding: 16px;
 }
-
 .search {
     margin-bottom: 16px;
 }
-
 .list-sample {
     display: block;
     position: relative;
     height: 550px;
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2),
-        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
-        0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
-
 igx-icon {
     cursor: pointer;
 }
-
 igx-list-item {
     font-size: 30px;
 }
-
 igx-avatar {
     border-radius: 50%;
 }
@@ -32,13 +25,11 @@ igx-avatar {
     justify-content: space-between;
     align-items: center;
 }
-
 .contact {
     display: flex;
     flex: 1 0 240px;
     align-items: center;
 }
-
 .overlay {
     position: fixed;
     top: 0;
@@ -47,12 +38,10 @@ igx-avatar {
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     transition: opacity 500ms;
-  visibility: visible;
+    visibility: visible;
     opacity: 1;
-  }
-  
-  
-  .popup {
+}
+.popup {
     margin: 70px auto;
     padding: 20px;
     background: #fff;
@@ -60,14 +49,13 @@ igx-avatar {
     width: 30%;
     position: relative;
     transition: all 5s ease-in-out;
-  }
-  
-  .popup h2 {
+}
+.popup h2 {
     margin-top: 0;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-  }
-  .popup .close {
+}
+.popup .close {
     position: absolute;
     top: 20px;
     right: 30px;
@@ -76,24 +64,21 @@ igx-avatar {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
-  .popup .close:hover {
+}
+.popup .close:hover {
     color: red;
     cursor: pointer;
-  }
-  .popup .content {
+}
+.popup .content {
     max-height: 30%;
     overflow: auto;
-  }
-  
-  @media screen and (max-width: 700px){
-    
-    .popup{
-      width: 70%;
-    }
-  }
-
-  .icon{
-      border-radius: 50%;
-      border: 0;
-  }
+}
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 70%;
+   }
+}
+.icon {
+    border-radius: 50%;
+    border: 0;
+}
